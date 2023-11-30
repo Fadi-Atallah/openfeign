@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient("subjects")
+@FeignClient("neptun")
 public interface SubjectClient {
 
     @GetMapping(path = "subject", produces= MediaType.APPLICATION_JSON_VALUE)

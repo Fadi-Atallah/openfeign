@@ -19,7 +19,7 @@ public class ComplexController {
                 .toList();
     }
 
-    @GetMapping("find-all-subjects")
+    @GetMapping("/find-all-subjects")
     List<SubjectDto> findAllSubjects() {
         return subjectClient.allSubjects().stream().toList();
     }
